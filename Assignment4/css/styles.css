@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* HEADER ---------------------------------------------- */
+#master {
+    display: flex; /*makes everyhting inside flex*/
+     flex-direction: column; /*direction as column one after the other*/
+}
+#banner {
+    background-color: #add8e6; /* defines the color of background */
+    text-align: center; /*centers all content */
+    margin-right: 0px; /*margin to the right as 0 to positionate the banner*/
+    
+}
+#image img {
+    height: 60px; /* sets the image height */
+    width: 60px; /* sets the width */
+    display: block; /* block the image centralized */
+    margin: 0px auto 10px; /* adjust the margins of the image */
+    padding-top: 1em; /* adds some space between image and top of banner*/
+}
+#title h1 {
+    color: black; /* sets the color */
+    margin: 0; /* removes the margin */
+    padding-bottom: 10px; /*space in the end*/
+    
+}
+/* NAV ---------------------------------------------- */
+#navbar{
+    background-color: rgb(0, 123, 255);
+    margin: 0;
+    padding: 0; /*0 for margin and padding to make the navbar static and stuck in the begining of line*/
+    
+}
+#navbar ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   /*define the font*/
+    list-style: none;  /* remove the bullet points*/
+    font-size: 1.2rem; /*defines the size of letters*/
+    position: relative;   /*relative position*/
+    display: inline-block;  /*display all - same line*/ 
+    padding: 1px; /*increases the padding*/
+    margin: 1em; /*put some margin btw them*/
+    text-decoration:none; /*removes the link style*/
+}
+#navbar a {
+    text-decoration:none; /*remove the link underline*/
+    color: black; /*letter as black*/
+   
+}
+
+
+/* FOOTER -------------------------------------------- */
+  div.footer {
+    display: flex; /* flex to be moved around as decided*/
+    justify-content: center; /*centralize in horizontal*/
+    align-items: center; /*centralize in the vertical*/
+    margin: 1em 1.7rem 1rem 0; /*include some margins */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   /*define the font*/
+    color: black; /*define the font color*/
+    text-decoration: none;   /*remove the decoration of link*/
+  }
+
+  div.footer img{
+    margin-right: 12px; /*margin in the images of the footer to separate them*/
+    
+    
+  }
+  
+  /* INDEX -------------------------------------------- */
+table { /*adjustments to make table look like the sheet*/
+    align-self: center;
+    border-collapse: collapse;
+    width: auto;
+}    
+th, td {
+    padding: -1;
+    text-align: left;                
+}    
+th {
+    background-color: #f2f2f2;
+    border: 2px solid black; 
+}
+tr{
+    border: 2px solid black; 
+}
+input[type="number"]{
+    width: 40px; 
+}
+
+
+/* JAVAPAGE --------------------------------------------*/
+#main{
+    display: flex; /*flex*/
+    flex-direction: row; /*work as a row not column*/
+    align-items: flex-start; /*aligned in the start of page verticaly*/
+}
+#colorButtons{ /*put a box above all boxes and make it flex*/
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0; 
+    
+}
+#buttonJavaPage{ /*define the button layout and put them on the right of the page*/
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 70%;
+}
+#colorDisplay { /* put the box in the center of the page with border and font changes*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50%; 
+    height: 200px; 
+    font-size: 40px; 
+    border: 1px solid black; 
+    margin-left: 20px; 
+    padding: 0; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+#popup{ /*put the popup on the left of the page and same display as other box*/
+    margin: 0;
+    margin-left: 5px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 200px;
+    display: none;
+}
+/* ALIENDANCE --------------------------*/
+
+#alienDanceTitle{ /*title in the center*/
+    text-align: center;
+}
+#pageContainer { /*page as flex with all centered horizontal and vertical*/
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    
+}
+
+#imageContainer { /*align the image in the center of the container*/
+    text-align: center; 
+    position: relative;
+    
+
+}
+
+#clickable, #clickable2, #clickable3, #clickable4 { /*in the image the position of the maps is absolute*/ 
+    
+    position: absolute;
+    display: inline-block;
+    
+}
+/*all the cursors per id will be different*/
+#clickable1{
+    cursor: pointer;
+}
+#clickable2{
+    cursor: crosshair;
+}
+#clickable3{
+    cursor: help;
+}
+#clickable4{
+    cursor: progress;
+}
+#gifContainer img { /*define the size of the image*/
+    width: 512px; 
+    height: 512px; 
+}
+
+/* EVALUATION --------------------*/
+#answer{ /*put the color in red and display in the same line*/
+    color: red;
+    display: inline;
+}
+
+#sendFeedbackBtn{ /*adjustments in the feedback button*/
+    margin-top: 5px;
+     background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    width: 15%;
+
+}
