@@ -28,7 +28,7 @@
             <h2 id="alienDanceTitle">Alien "Danse"</h2> <!-- puts a warning message -->
         </header>
         <main> <!-- main page -->
-            <div id="pageContainer"> <!-- creates a div and id for the whole page-->$_COOKIE
+            <div id="pageContainer"> <!-- creates a div and id for the whole page-->
             <audio id="music" loop> <!--includes a music in the page -->
                 <source src="sounds/Alarm01.wav" type="audio/wav">
             </audio>
